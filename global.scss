@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #010049;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track{
+  background: white;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+$t: #010049;
+
+
+@mixin df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn {
+  font-weight: 400;
+  font-size: 18px;
+  color: #010049;
+  border: 1.5px solid #010049;
+  border-radius: 40px;
+  padding: 12px 30px;
+  background: transparent;
+  transition: .4s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    background: $t;
+    color: white;
+  }
+}
+
+@mixin btn2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #010049;
+  border: 2px solid #010049;
+  border-radius: 5px;
+  padding: 12px 30px;
+  transition: .4s;
+  background: transparent;
+  &:hover {
+    transform: scale(1.1);
+    background: $t;
+    color: white;
+  }
+}
+
+@mixin h1 {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: start;
+  color: #010049;
+  padding: 20px 0;
+}
+
+@mixin logo {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+@mixin a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px 0;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

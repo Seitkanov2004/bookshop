@@ -1,0 +1,275 @@
+@import "global";
+
+#header {
+  background: $t;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  .header {
+    padding: 10px 0;
+    @include df;
+
+    h1 {
+      font-family: 'Mochiy Pop One', sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+
+    &--icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__q {
+        color: white;
+        font-size: 26px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+}
+
+#hero {
+  .hero {
+    padding-top: 60px;
+    .swiper {
+      width: 1140px;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+#categories {
+  .categories {
+    &--h1 {
+      font-weight: 700;
+      font-size: 38px;
+      text-align: start;
+      color: #010049;
+      padding: 20px 0;
+
+    }
+
+    .category-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .categories--block {
+      width: 260px;
+      height: 160px;
+      position: relative;
+      transition: .4s;
+      &:hover{
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 260px;
+        height: 160px;
+      }
+
+      &__a1 {
+        width: 260px;
+        height: 160px;
+        background: rgba(1, 0, 73, 0.5);
+        border-radius: 17px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &__btn {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        button {
+          font-weight: 700;
+          font-size: 20px;
+          color: #FFFFFF;
+          background: transparent;
+          border: none;
+        }
+
+        &--icon {
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#book {
+  .book {
+    padding: 80px 0;
+
+    .book1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--h1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        @include h1;
+      }
+
+      select {
+        font-weight: 600;
+        font-size: 16px;
+        color: #010049;
+        border: 1px solid #010049;
+        border-radius: 3px;
+        background: transparent;
+        width: 193px;
+        height: 40px;
+      }
+    }
+
+    &--block {
+      @include df;
+      flex-wrap: wrap;
+      padding: 20px 0;
+
+      &__work {
+        padding: 20px 10px;
+        width: 200px;
+
+        img {
+          width: 200px;
+        }
+
+        &--som {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 90%;
+          padding: 10px 0;
+
+          span {
+            font-weight: 800;
+            font-size: 20px;
+            color: #000000;
+          }
+
+          &__cart {
+            font-size: 20px;
+          }
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+    }
+
+    &--btn {
+      @include btn;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+#footer {
+  background: $t;
+
+  .footer {
+    @include df;
+    padding: 40px 0;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      @include a;
+    }
+
+    h1 {
+      @include logo;
+    }
+
+    &--c {
+      span {
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+      }
+
+      &__b {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--icon {
+          font-size: 22px;
+          color: white;
+        }
+      }
+    }
+
+    &--q{
+      span{
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      p{
+        margin-top: 20px;
+        width: 300px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

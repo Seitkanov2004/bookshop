@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #010049;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#header {
+  background: #010049;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+#header .header {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header h1 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+#header .header--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header .header--icon__q {
+  color: white;
+  font-size: 26px;
+}
+#header .header--icon span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+#hero .hero {
+  padding-top: 60px;
+}
+#hero .hero .swiper {
+  width: 1140px;
+  height: 100%;
+}
+#hero .hero .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#hero .hero .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#categories .categories--h1 {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: start;
+  color: #010049;
+  padding: 20px 0;
+}
+#categories .categories .category-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#categories .categories .categories--block {
+  width: 260px;
+  height: 160px;
+  position: relative;
+  transition: 0.4s;
+}
+#categories .categories .categories--block:hover {
+  transform: scale(1.1);
+}
+#categories .categories .categories--block img {
+  width: 260px;
+  height: 160px;
+}
+#categories .categories .categories--block__a1 {
+  width: 260px;
+  height: 160px;
+  background: rgba(1, 0, 73, 0.5);
+  border-radius: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#categories .categories .categories--block__btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+#categories .categories .categories--block__btn button {
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: transparent;
+  border: none;
+}
+#categories .categories .categories--block__btn--icon {
+  color: white;
+  font-size: 20px;
+}
+
+#book .book {
+  padding: 80px 0;
+}
+#book .book .book1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#book .book--h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#book .book--h1 h1 {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: start;
+  color: #010049;
+  padding: 20px 0;
+}
+#book .book--h1 select {
+  font-weight: 600;
+  font-size: 16px;
+  color: #010049;
+  border: 1px solid #010049;
+  border-radius: 3px;
+  background: transparent;
+  width: 193px;
+  height: 40px;
+}
+#book .book--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+#book .book--block__work {
+  padding: 20px 10px;
+  width: 200px;
+}
+#book .book--block__work img {
+  width: 200px;
+}
+#book .book--block__work--som {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px 0;
+}
+#book .book--block__work--som span {
+  font-weight: 800;
+  font-size: 20px;
+  color: #000000;
+}
+#book .book--block__work--som__cart {
+  font-size: 20px;
+}
+#book .book--block__work p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+}
+#book .book--btn {
+  font-weight: 400;
+  font-size: 18px;
+  color: #010049;
+  border: 1.5px solid #010049;
+  border-radius: 40px;
+  padding: 12px 30px;
+  background: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#book .book--btn:hover {
+  transform: scale(1.1);
+  background: #010049;
+  color: white;
+}
+
+#footer {
+  background: #010049;
+}
+#footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+#footer .footer a {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px 0;
+  transition: 0.4s;
+}
+#footer .footer a:hover {
+  transform: scale(1.1);
+}
+#footer .footer h1 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+#footer .footer--c span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#footer .footer--c__b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .footer--c__b--icon {
+  font-size: 22px;
+  color: white;
+}
+#footer .footer--q span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#footer .footer--q p {
+  margin-top: 20px;
+  width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
